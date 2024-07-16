@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+
+
+.card{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+.send-task{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.send-task h1{
+    color: rgb(75, 84, 94);
+}
+.input-task{
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    padding: 7px 7px;
+    border-radius: 15px;
+    outline: none;
+
+}
+
+.submit-button{
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.container-task{
+    height: 62%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgba(240, 236, 236, 0.288);
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow-y: scroll;
+    
+}
+.task{
+    display: flex;
+    background-color: lightsalmon;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+    width: 230px;
+    gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.actions{
+    display: flex;
+    height: 100%;
+    gap: 5px;
+}
+.task-text{
+    flex: 3;
+    overflow-x: scroll;
+}
+.close{
+    border: none;
+    height: 26px;
+    width: 26px;
+    background-color: darkred;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.edit{
+    padding: 2px 15px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.edit:hover{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .card{
+        height: 450px;
+        width: 600px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.423);
+    }
+    .send-task{
+        margin-top: 2rem;
+    }
+    .task{
+        width: 350px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .card{
+        height: 530px;
+        width: 680px;
+    
+    }
+    .send-task{
+        margin-top: 4rem;
+    }
+    .task-text{
+        overflow-x: hidden;
+    }
+
+}
